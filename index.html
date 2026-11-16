@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E‑Learning Portal </title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+ <header>
+    <h1>E-Learning Portal</h1>
+
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Learn Anywhere, Anytime</h2>
+    <p>Access quality courses and track your progress on our modern learning platform.</p>
+    <a href="#" class="btn">Browse Courses</a>
+  </section>
+
+
+  <section class="search">
+  <label for="search">Search courses:</label>
+  <input type="search" id="search"
+    placeholder="e.g. Web Development">
+  <p id="no-results" hidden>
+    No courses found.
+  </p>
+</section>
+
+
+<section class="courses">
+  <h2>Popular Courses</h2>
+ <div class="course-list" id="course-list">
+
+</div>
+</section>
+
+<section class="timetable">
+  <h2>Weekly Timetable</h2>
+  <table>
+  <thead>
+      <tr>
+        <th scope="col"> Course</th>
+        <th scope="col"> Day</th>
+        <th scope="col"> Time</th>
+        <th scope="col"> Lecturer</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Web Development</td>
+        <td>Monday</td>
+        <td>09:00 – 11:00</td>
+        <td>Mr Brown</td>
+      </tr>
+      <tr>
+        <td>Database Design</td>
+        <td>Wednesday</td>
+        <td>14:00 – 16:00</td>
+        <td>Mr Jones</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section class="registration">
+  <h2>Student Registration</h2>
+  <form action="register.php" method="post">
+    <div class="form-group">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="programme">Programme:</label>
+      <select id="programme" name="programme" required>
+        <option value="">-- Select Programme --</option>
+        <option value="cs">Computer Science</option>
+        <option value="is">Information Systems</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn">Register</button>
+  </form>
+</section>
+
+</main>
+
+
+
+<footer>
+  <p>&copy; 2025 E‑Learning Portal. All rights reserved.</p>
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </nav>
+</footer>
+
+
+</body>
+</html>
